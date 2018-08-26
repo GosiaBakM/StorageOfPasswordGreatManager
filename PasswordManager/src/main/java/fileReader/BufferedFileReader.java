@@ -32,7 +32,6 @@ public class BufferedFileReader extends AbstractFileReader{
             while (line != null) {
                 result.add(line);
                 line = reader.readLine();
-
             }
         }
         return result;

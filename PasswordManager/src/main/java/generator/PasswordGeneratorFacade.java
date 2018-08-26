@@ -1,11 +1,11 @@
 package generator;
 
 
-public class PasswordFacade {
+public class PasswordGeneratorFacade {
 
     private PasswordGeneratorFactory passwordGeneratorFactory;
 
-    public PasswordFacade() {
+    public PasswordGeneratorFacade() {
         passwordGeneratorFactory = new PasswordGeneratorFactory();
     }
 

@@ -1,4 +1,4 @@
-package geteratorTest;
+package geterator;
 
 import generator.MediumPasswordGenerator;
 import org.junit.Before;
