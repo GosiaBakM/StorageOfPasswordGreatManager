@@ -1,7 +1,7 @@
-package geteratorTest;
+package geterator;
 
 import generator.GeneratorType;
-import generator.PasswordFacade;
+import generator.PasswordGeneratorFacade;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,11 +10,11 @@ import static org.assertj.core.api.Java6Assertions.assertThat;
 
 public class PasswordFacadeTest {
 
-    PasswordFacade facade;
+    PasswordGeneratorFacade facade;
 
     @Before
     public void startUp (){
-        facade = new PasswordFacade();
+        facade = new PasswordGeneratorFacade();
     }
 
     @Test
@@ -27,5 +27,9 @@ public class PasswordFacadeTest {
                 .isNotBlank()
                 .isNotNull()
                 .isNotEmpty();
+
+
+
+
     }
 }

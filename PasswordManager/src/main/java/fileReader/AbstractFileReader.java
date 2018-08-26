@@ -4,18 +4,24 @@ import model.PasswordEntry;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
 
 abstract class AbstractFileReader implements FileReader {
 
+    private static String PATH = "C:\\Passwords";
+
         File getFile(String path) {
             if (path == null) {
                 throw new IllegalArgumentException("May not be null");
             }
-            ClassLoader classLoader = getClass().getClassLoader();
-            return new File(classLoader.getResource(path).getFile());
+//            ClassLoader classLoader = getClass().getClassLoader();
+//            return new File(classLoader.getResource(path).getFile());
+            path = PATH + "\\" + path;
+
+            return Paths.get(path).toFile();
         }
 
         @Override

@@ -1,4 +1,4 @@
-package geteratorTest;
+package geterator;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +17,7 @@ public class PasswordGeneratorFactoryTest {
 
     @Test
     public void testing(){
-        //assertThat(generator.
+        //assertThat(generator.getGenerator()
     }
 
 }

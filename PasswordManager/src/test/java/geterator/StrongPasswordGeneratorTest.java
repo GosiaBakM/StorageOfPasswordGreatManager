@@ -1,4 +1,4 @@
-package geteratorTest;
+package geterator;
 import generator.StrongPasswordGenerator;
 import org.junit.Before;
 import org.junit.Test;
